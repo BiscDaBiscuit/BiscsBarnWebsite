@@ -139,3 +139,34 @@ footer {
   text-align: center;
   color: black;
 }
+
+
+
+/*──────────────────
+    social media
+──────────────────*/
+
+.social-media{
+	padding: 10px;
+	display: flex;
+	position: center;
+  align-items: space-around;
+	justify-content:center;
+}
+
+.social-media a {
+  margin: 10px;
+  font-size: 2rem;
+  text-align:center;
+  display: inline-block;
+	color:white;
+}
+
+.social-media a i{
+	cursor: pointer;
+}
+
+.social-media  a:hover {
+	color:dodgerblue;
+	text-shadow: 0 0 50px dodgerblue;
+}
