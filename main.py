@@ -4,13 +4,11 @@ import os
 from flask_sqlalchemy import SQLAlchemy
 from time import sleep
 
-
 app = Flask(__name__)
 app.secret_key = os.getenv("secret_key")
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.sqlite3'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.permanent_session_lifetime = timedelta(days=30)
-
 db = SQLAlchemy(app)
 
 class users(db.Model):
@@ -22,6 +20,8 @@ class users(db.Model):
     self.name = name
     self.email = email
 
+
+
 @app.route('/home')
 def home():
   if 'user' in session:
@@ -31,6 +31,8 @@ def home():
   else:
     flash('You are not logged in!')
     return redirect(url_for('login'))
+
+
 
 @app.route('/')
 def homeSecond():
@@ -42,6 +44,8 @@ def homeSecond():
     flash('You are not logged in!')
     return redirect(url_for('login'))
 
+
+
 @app.route('/adminview')
 def view():
   if 'user' in session:
@@ -51,7 +55,9 @@ def view():
   else:
     flash('You are not logged in!')
     return redirect(url_for('login'))
-    
+
+
+  
 @app.route('/login', methods=["POST", "GET"])
 def login():
   if request.method == 'POST':
@@ -59,7 +65,7 @@ def login():
     user = request.form['nm']
     session['user'] = user
 
-    ##-------Delete Users From AdminView-------##
+    ##-------Delete Users From Website/AdminView-------##
     #Delete the current users.sqlite3 while the replit is stopped than run it again and the adminview and the accounts (users) saved will be deleted and refreshed.
     ##-----------------------------------------##
     
@@ -78,9 +84,11 @@ def login():
   else:
     if 'user' in session:
       flash(f'You are already logged in.')
-      return redirect(url_for('user'))
+      return redirect(url_for('home'))
       
     return render_template("login.html")
+
+
 
 @app.route('/user', methods=['POST', 'GET'])
 def user():
@@ -105,7 +113,8 @@ def user():
   else:
     flash('Your are not logged in.')
     return redirect(url_for('login'))
-    
+
+  
 
 @app.route('/logout')
 def logout():
@@ -113,6 +122,8 @@ def logout():
   session.pop('user', None)
   session.pop('email', None)
   return redirect(url_for('login'))
+
+
   
 @app.route('/links')
 def links():
@@ -123,6 +134,8 @@ def links():
   else:
     flash('Your are not logged in.')
     return redirect(url_for('login'))
+
+
 
 @app.route('/comingsoon')
 def comingsoon():
