@@ -1,6 +1,13 @@
 {% extends "base.html" %}
 {% block title %}Home Page{% endblock %}
 {% block content %}
+  {% with messages=get_flashed_messages() %}
+    {% if messages %}
+      {% for msg in messages %}
+        <h2 style="color:RED;">{{msg}}</h2>
+      {% endfor %}
+    {% endif %}
+  {% endwith %}
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
