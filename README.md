@@ -11,6 +11,4 @@ This website now is much simpler but also the same in appearance, be sure to not
 
 # Requirements
 
-**1.** *Flask*
-
-**2.** *Numpy*
+*Flask*
