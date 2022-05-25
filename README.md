@@ -9,5 +9,7 @@ I can promise it will work properly if you dont have what is specificly needed t
 # Requirements
 
 **1.** *Flask*
+
 **2.** *Flask-SQLAlchemy*
+
 **3.** *Numpy*
