@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}(Coming Soon){% endblock %}
+{% block content %}
+  {% with messages=get_flashed_messages() %}
+    {% if messages %}
+      {% for msg in messages %}
+        <h2 style="color:RED;">{{msg}}</h2>
+      {% endfor %}
+    {% endif %}
+  {% endwith %}
+<html>
+  <body>
+  <p></p>
+  <h1>Oops!</h1>
+    <pre>    This page isnt not
+      currently being worked on
+      but it will be an
+      official page someday!</pre>
+  </body>
+</html>
+{% endblock %}
