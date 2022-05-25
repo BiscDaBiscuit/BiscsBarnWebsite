@@ -1,0 +1,85 @@
+body { 
+  background-color:Black;
+  text-align:center;
+}
+
+p {
+  color:white;
+}
+
+pre {
+  color:white;
+  font-size:20px;
+}
+
+h1 {
+  color: dodgerblue;
+}
+
+h2 {
+  color: dodgerblue;
+}
+
+button {
+  background-color:black;
+  color:white;
+  border-color:dodgerblue;
+}
+
+
+a:link {
+  color: blue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: purple;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:unvisited {
+  color: blue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color:red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+table, th, td {
+  border: 2px solid blue;
+  border-collapse: collapse;
+
+}
+th, td {
+  background-color: white;
+  border-style:inset;
+}
+
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+  }
+
+
+
+header {
+  background-color: black;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: dodgerblue;
+}
+
+footer {
+  background-color: dodgerblue;
+  padding: 10px;
+  text-align: center;
+  color: black;
+}

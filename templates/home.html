@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% block title %}Home Page{% endblock %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=.3">
+  <meta charset="UTF-8">
+  <meta name="description" content="A Test Site Made To Learn HTML">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Test, Testing, Learn, Learning">
+  <meta name="author" content="Bisc, BiscDaBiscuit, BeeGon08">
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="https://www.favicon.cc/logo3d/953585.png">
+  
+  <title>Biscs HTML Learning</title>
+  </head>
+
+  
+  <body>
+    <p></p>
+    <h1 class="Headers">Biscs HTML Environment</h1>
+    <pre title="Introduction"><i>Welcome to a new site made for
+    me to learn more HTML. I read 
+    off of the documentation made by 
+    w3schools while making this       
+    website. There documentation really 
+    helped me out as I am new to 
+    HTML and am still currently learning.</i></pre>
+    
+    <button onclick="document.location='https://www.w3schools.com/html/'" target="_blank" title="Button Link For W3Schools HTML Tutorial" style="width:20%;">W3Schools HTML Documentation/Tutorial</button> 
+    <p></p>
+    <button class="Headers" title="Hides Headers | Reason: Why Not?" onclick="deleteHeaders()">Hide Headers</button>
+
+    <hr>
+    
+    <h1 class="Headers">About Me</h1>
+    <pre title="About Me Information"><i>I am a teenager who loves to play
+    video games, code, play baseball,
+    and so on! I mostly code in Python
+    but am not advanced in the language
+    yet... I am also now learning HTML
+    as it is very useful and enjoyable.</i></pre>
+    
+    <table class="center" style="width:50%" title="About Me Table">
+      <tr>
+        <th>Personal Info</th>
+        <th>Technological Info</th>
+      </tr>
+      <tr>
+        <td>Name: Braedon S</td>
+        <td>Languages: Python | HTML</td>
+      </tr>
+      <tr>
+        <td>Sports: Baseball</td>
+        <td>IDE's: Replit/VSC Mainly Used</td>
+      </tr>
+    </table>
+
+      <hr>
+      <h1 class="Headers">Coding/Tech Journey</h1>
+      <pre title="Coding Journey Information"><i>I first started getting into technology
+from my father, he works in and enjoys technology and taught me a lot 
+about technology. Such as network information, ip address information,
+and so on. As I continued to learn tech topics I also got my first 
+computer, soon after I started coding! I first bounced around different
+languages of code before choosing Python, as my main lanuage to learn;
+I am not the best in python and want to learn more advanced Python
+sooner or later. But currently I am decent in certain things related to
+Python and am now starting HTML as you can see... I am pretty good but
+also a newbie so hold on for the bumpy ride. I also started doing some
+hacking stuff such as nmap. I also messed around with batch file for a bit
+making funny computer crashers... One even played Peter saying "TaaaDaaaahh"
+from family guy before crashing your computer, dont ask...</i></pre>
+
+    
+
+    
+    <footer><strong>Programmed By: BiscDaBiscuit (Braedon S) | Credits: W3Schools</strong></footer>
+  </body>
+
+
+
+<script>
+function deleteHeaders() {
+  var x = document.getElementsByClassName("Headers");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+}
+</script>
+
+
+
+</html>
+{% endblock %}

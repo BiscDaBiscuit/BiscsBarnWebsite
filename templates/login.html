@@ -1,0 +1,18 @@
+{% extends "base.html"%}
+{% block title %}Login Page | Sign Up Page{% endblock %}
+{% block content %}
+  {% with messages=get_flashed_messages() %}
+    {% if messages %}
+      {% for msg in messages %}
+        <p>{{msg}}</p>
+      {% endfor %}
+    {% endif %}
+  {% endwith %}
+<h1>Login Page | Sign Up</h1>
+<p></p>
+<form action='#' method='post'>
+  <pre>Name:</pre>
+  <p><input type='text' name='nm'></p>
+  <p><input type='submit' value='Login | Sign Up'></p>
+</form>
+{% endblock %}
