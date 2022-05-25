@@ -21,8 +21,8 @@ def links():
 def comingsoon():
   return render_template('comingsoon.html')
 
-@app.route('/comingsomeday')
-def comingsomeday():
-  return render_template('comingsomeday.html')
+#@app.route('/comingsomeday')
+#def comingsomeday():
+#  return render_template('comingsomeday.html')
 
 app.run(host='0.0.0.0', port=8080, debug=True)
