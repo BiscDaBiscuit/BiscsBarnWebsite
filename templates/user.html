@@ -8,16 +8,18 @@
       {% endfor %}
     {% endif %}
   {% endwith %}
-<body>
-  <h1>User Page</h1>
-  <p></p>
-  <pre>Submit your email
-  to gain access to
-  the rest of the site!</pre>
-  <form action='#' method='POST'>
-    <input type='email' name='email' placeholder='Enter Email' value='{{email if email}}'/>
-    <input type='submit' value='Submit'/>
-  </form>
-    
-<body>
+<html>
+  <body>
+    <h1>User Page</h1>
+    <p></p>
+    <pre>
+    Submit your email
+    to gain access to the
+    rest of this site!</pre>
+    <form action='#' method='POST'>
+      <input type='email' name='email' placeholder='Enter Email' value='{{email if email}}'/>
+      <input type='submit' value='Submit'/>
+    </form>
+  </body>
+</html>
 {% endblock %}
