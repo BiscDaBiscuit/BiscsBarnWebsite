@@ -5,13 +5,11 @@
 
 # Information
 **Only works on replit unless modified by you directly.**
-*This site/code is more advanced and has certain things that is required for it to work properly. This code comes of off my repl and it is now being put on my github.
-I can promise it will work properly if you dont have what is specificly needed to run the site. (Secret Key and SQLALCHEMY_TRACK_MODIFICATIONS as an example)*
+*The first few versions of this website were made with an Account System but it has been deleted as it isnt needed and there were certain bugs with it.
+*This website now is much simpler but also the same in appearance, be sure to note that it is unfinished and is still being worked on when I want to/can.*
 
 # Requirements
 
 **1.** *Flask*
 
-**2.** *Flask-SQLAlchemy*
-
-**3.** *Numpy*
+**2.** *Numpy*
