@@ -3,6 +3,8 @@ from datetime import timedelta
 import os
 from time import sleep
 
+
+
 app = Flask(__name__)
 
 @app.route('/home')
@@ -16,6 +18,10 @@ def homeSecond():
 @app.route('/links')
 def links():
   return render_template('links.html')
+
+@app.route('/projects')
+def projects():
+  return render_template('projects.html')
 
 @app.route('/comingsoon')
 def comingsoon():
