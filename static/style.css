@@ -1,5 +1,5 @@
 :root{
-	--main-background: #0b0c0f;
+	--main-background: #000000;
 	--main-fonts-color: #fff;
 	--main-decor-color:#1E90FF;
     --main-header-background:#000000;
@@ -26,31 +26,33 @@ main{
 ──────────────────*/
 
 body { 
-  background-color:Black;
+  background: var(--main-background);
   text-align:center;
   font-family: 'Poppins', sans-serif;
 }
 
 p {
   color:white;
+  font-family: 'Poppins', sans-serif;
 }
 
 pre {
   color:white;
   font-size:20px;
+  font-family: 'Poppins', sans-serif;
 }
 
 h1 {
-  color: dodgerblue;
+  color: var(--main-decor-color);
 }
 
 h2 {
-  color: dodgerblue;
+  color: var(--main-decor-color);
 }
 
 hr {
-  color:dodgerblue;
-  background-color:dodgerblue;
+  color:var(--main-decor-color);
+  background: var(--main-decor-color);
 	margin: 10px;
 	height: 3px;
 	width: 100%;
@@ -72,7 +74,7 @@ hr {
 }
 ::-webkit-Scrollbar-thumb{
 	border-radius: 10px;
-  color:dodgerblue;
+  color: var(--main-decor-color);
 	box-shadow: inset 0 0 20px
 }
 ::-webkit-Scrollbar-track{
@@ -87,9 +89,9 @@ hr {
 ──────────────────*/
 
 button {
-  background-color:black;
-  color:white;
-  border-color:dodgerblue;
+  background: var(--main-background);
+  color: var(--main-fonts-color);
+  border-color: var(--main-decor-color);
 }
 
 
@@ -150,7 +152,7 @@ table.center {
 ──────────────────*/
 
 header {
-  background-color: black;
+  background: var(--main-background);;
   padding: 30px;
   text-align: center;
   font-size: 35px;
@@ -158,7 +160,7 @@ header {
 }
 
 footer {
-  background-color: dodgerblue;
+  background: var(--main-decor-color);;
   padding: 10px;
   text-align: center;
   color: black;
@@ -183,7 +185,7 @@ footer {
   font-size: 2rem;
   text-align:center;
   display: inline-block;
-	color:white;
+	color: var(--main-fonts-color);
 }
 
 .social-media a i{
@@ -192,7 +194,7 @@ footer {
 
 .social-media  a:hover {
 	color:dodgerblue;
-	text-shadow: 0 0 50px dodgerblue;
+	text-shadow: 0 0 50px  var(--main-decor-color);;
 }
 
 
