@@ -9,15 +9,13 @@
 *The first few versions of this website were made with an Account System but it has been deleted as it isnt needed and there were certain bugs with it.
 This website now is much simpler but also the same in appearance, be sure to note that it is unfinished and is still being worked on when I want to/can.*
 
-### Requirements
+## Requirements
 *Flask*
 
 
-# Security MD
+# Security Policy
 
 *You may also access this policy in the SECURITY.md file.*
-
-# Security Policy
 
 ## Supported Versions
 
@@ -31,9 +29,9 @@ This website now is much simpler but also the same in appearance, be sure to not
 
 ## How To Avoid Vulnerabilities
 
-*Currently the only way to avoid these vulnerabilities are to only use versions 2.0 and above, or you can make changeds to those earlier versions yourself.
+*Currently the only way to avoid these vulnerabilities are to only use versions 2.0 and above, or you can make changeds to those earlier versions yourself.*
 
-I am not responsible if you or any others have personal information leaked/stolen when you use version 1.5 and below. You also must no that having an account on those earlier website does not mean much, it was a way to identify whom signed up onto my website at the time. (The account system was made more fun/testing and I dont plan on using on for a long while on this wesbite.)*
+*I am not responsible if you or any others have personal information leaked/stolen when you use version 1.5 and below. You also must no that having an account on those earlier website does not mean much, it was a way to identify whom signed up onto my website at the time. (The account system was made more fun/testing and I dont plan on using on for a long while on this wesbite.)*
 
 | Symbol  | Meaning            |
 | ------- | ------------------ |
