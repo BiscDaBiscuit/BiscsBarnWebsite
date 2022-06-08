@@ -42,6 +42,8 @@ pre {
   font-family: 'Poppins', sans-serif;
 }
 
+
+
 h1 {
   color: var(--main-decor-color);
 }
@@ -49,6 +51,8 @@ h1 {
 h2 {
   color: var(--main-decor-color);
 }
+
+
 
 hr {
   color:var(--main-decor-color);
@@ -64,37 +68,27 @@ hr {
 
 
 
-/*────────────────── 
-     Scrollbar
-──────────────────*/
-
-::-webkit-Scrollbar{
-    width: 5px; 
-	background: rgba(5,5,5,1);
-}
-::-webkit-Scrollbar-thumb{
-	border-radius: 10px;
-  color: var(--main-decor-color);
-	box-shadow: inset 0 0 20px
-}
-::-webkit-Scrollbar-track{
-	margin-top: 80px;
-	border-radius: 10px;
+header {
+  background: var(--main-background);;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: dodgerblue;
 }
 
+footer {
+  background: var(--main-decor-color);;
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
 
-
-/*────────────────── 
-       Button
-──────────────────*/
 
 button {
   background: var(--main-background);
   color: var(--main-fonts-color);
   border-color: var(--main-decor-color);
 }
-
-
 
 /*────────────────── 
        Links
@@ -127,6 +121,26 @@ a:active {
 
 
 /*────────────────── 
+     Scrollbar
+──────────────────*/
+
+::-webkit-Scrollbar{
+    width: 5px; 
+	background: rgba(5,5,5,1);
+}
+::-webkit-Scrollbar-thumb{
+	border-radius: 10px;
+  color: var(--main-decor-color);
+	box-shadow: inset 0 0 20px
+}
+::-webkit-Scrollbar-track{
+	margin-top: 80px;
+	border-radius: 10px;
+}
+
+
+
+/*────────────────── 
        Tables
 ──────────────────*/
 
@@ -144,27 +158,6 @@ table.center {
     margin-left:auto; 
     margin-right:auto;
   }
-
-
-
-/*────────────────── 
-       Header/Footer
-──────────────────*/
-
-header {
-  background: var(--main-background);;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
-  color: dodgerblue;
-}
-
-footer {
-  background: var(--main-decor-color);;
-  padding: 10px;
-  text-align: center;
-  color: black;
-}
 
 
 
@@ -193,8 +186,8 @@ footer {
 }
 
 .social-media  a:hover {
-	color:dodgerblue;
-	text-shadow: 0 0 50px  var(--main-decor-color);;
+	color: var(--main-decor-color);
+	text-shadow: 0 0 50px  var(--main-decor-color);
 }
 
 
