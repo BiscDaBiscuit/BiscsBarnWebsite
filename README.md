@@ -11,8 +11,7 @@
 ## Information
 **Only works on replit unless modified by you directly.**
 
-*The first few versions of this website were made with an Account System but it has been deleted as it isnt needed and there were certain bugs with it.
-This website now is much simpler but also the same in appearance, be sure to note that it is unfinished and is still being worked on when I want to/can.*
+*The first set of versions with this website were either unsafe, buggy, and unfinished. This website now nicer and much simpler but also the same in appearance, please note that this website will be worked whenever; more will be added to it overtime.
 
 ## Requirements
 *Flask*
