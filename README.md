@@ -1,4 +1,4 @@
-# ⚠️All Releases Will Soon Deleted⚠️
+# ⚠️All Releases Were Deleted⚠️
 **Why?:** *Past Versions Of This Website Are UnSafe and/or Has Some Messed Up Code!*
 
 # BiscsBarnWebsite
